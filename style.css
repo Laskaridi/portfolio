@@ -8,6 +8,7 @@ body{
 }
 .bg1{
     width: 100vw;
+    height: 100vh;
     background-color: rgb(213, 225, 239);
     padding: 200px;
     margin: 0 auto;
