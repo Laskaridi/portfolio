@@ -24,8 +24,9 @@ body{
     width: 100%;
     background-color: rgb(54, 133, 255);
     border-radius: 15px;
-    text-align: center;
-    padding: 70px 0;
+   display: grid;
+   place-items: center;
+   padding: 50px 0;
 }
 .bg2 h3{
 color: rgb(31, 49, 79);
@@ -92,7 +93,7 @@ padding: 0 20px;
         padding: 85px 20px;
     }
     .bg2{
-        width: 90%;
+        width: 75%;
     }
 }
 

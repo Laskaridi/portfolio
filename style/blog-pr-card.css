@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(244, 208, 78);
+}
+.container{
+    width: 384px;
+    height: 522px;
+    border: 1px solid rgb(17, 17, 17);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px 0px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 24px;
+    margin: 200px auto;
+}
+.content img{
+  width: 100%;
+  margin-bottom: 24px;
+}
+.content-title{
+    width: 82px;
+    height: 29px;
+    border-radius: 4px;
+    background-color: rgb(244, 207, 77);
+    display: grid;
+    place-items: center;
+    margin-bottom: 17px;
+}
+.content-title h3{
+    color: rgb(17, 17, 17);
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: left;
+}
+.content h2, h4{
+    color: rgb(17, 17, 17);
+    font-family: Figtree;
+    text-align: left;
+    padding-bottom: 17px;
+}
+.content h2{
+    font-weight: 800;
+    font-size: 24px;
+}
+.content h2:hover{
+    color: rgb(244, 207, 77);
+}
+.content h2:active{
+    color: (244, 207, 77)
+}
+.content h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+.content p{
+    color: rgb(107, 107, 107);
+    font-family: Figtree;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    text-align: left;
+}
+.bottom-content{
+    display: flex;
+    margin-top: 23px;
+}
+.bottom-content img{
+    width: 10%;
+}
+.bottom-content h5{
+    color: rgb(17, 17, 17);
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+
+@media(max-width:600px){
+    .container{
+        width: 327px;
+        height: 501px;
+        margin: 160px auto;
+    }
+    .content img{
+        width: 279px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+    .content-title h3, h4{
+        font-size: 12px;
+    }
+    .content h2{
+        font-size: 20px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .bottom-content{
+        margin-top: 15px;
+    }
+    .bottom-content img{
+        width: 32px;
+        height: 32px;
+    }
+}
