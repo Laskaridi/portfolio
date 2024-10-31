@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+}
+.nav-content{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.nav-content a, button{
+    color: black;
+    font-family: Figtree;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.nav-content button{
+    border: none;
+    background-color: white;
+}
+.dropdown{
+        position: relative;
+        display: inline-block;
+}
+#dropdownLink{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+}
+.dropdown-content{
+    width: 150px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 10px;
+}
+.dropdown-content a{
+    color: black;
+    font-size: 14px;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+#search-button{
+
+}
+.search-container{
+    display: none;
+    margin-top: 10px;
+}
+#search-input{
+    padding: 8px;
+    width: 200px;
+    font-size: 16px;
+}
+.login{
+    width: 17%; 
+}
+.login a{
+    color: black;
+    font-family: Figtree;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.login button{
+    padding: 15px 0;
+    color: white;
+    font-family: Figtree;
+    font-size: 16px;
+    font-weight: 800;
+    width: 210px;
+    background-color: #ababab;
+    border: none;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+.top-content{
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.top-left-content, .top-right-content{
+    width: 40%;
+}
+.top-left-content{
+    padding-right: 100px;
+}
+.top-left-content h1, p, label{
+    color: white;
+    font-family: Figtree;
+    font-weight: 600;
+}
+.top-left-content h1{
+    font-size: 64px;
+    margin: 30px 0 50px ;
+    line-height: 70px;
+}
+.top-left-content p{
+    color: white;
+    font-family: Figtree;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: left;
+}
+.top-left-content label{
+    font-size: 16px;
+    border: 2px solid white;
+    padding: 7px;
+}
+.top-right-content img{
+    width: 90%;
+    transform: rotate(10deg);
+    margin-top: 60px;
+}
+.choose{
+    background-color: #e9e9e9;
+}
+.choose h1{
+    text-align: center;
+    font-family: Figtree;
+    font-size: 42px;
+    font-weight: 700;
+    padding: 100px 0;
+}
+.choose-content{
+    display: flex;
+    justify-content: center;
+}
+.choose-left-content{
+    width: 50%;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+.choose-right-content{
+    width: 50%;
+    border-top: 2px solid black;
+}
+.choose-left-content-container, .choose-right-content-container{
+    width: 60%;
+}
+.choose-left-content-container{
+    position: relative;
+    left: 250px;
+    padding-left: 70px;
+}
+.choose-right-content-container{
+    padding-left: 70px;
+    margin-left: 35px;
+}
+.choose-left-content-container img{
+    width: 100%;
+}
+.choose-left-content-container h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 75px;
+}
+.choose-left-content-container p{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 30px 0 40px;
+}
+.choose-left-content-container h2, p{
+    text-align: center;
+    font-family: Figtree;
+}
+.choose-right-content-container img{
+    width: 100%;
+}
+.choose-right-content-container h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 75px;
+}
+.choose-right-content-container p{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 30px 0 40px;
+}
+.choose-right-content-container h2, p{
+    text-align: center;
+    font-family: Figtree;
+}
+.title-make{
+    background-color: black;
+}
+.title-make h1{
+    color: white;
+    font-family: Figtree;
+    font-size: 66px;
+    font-weight: 700;
+    text-align: center;
+    padding: 100px 0;
+}
+.making-containter{
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 1fr;
+    background: linear-gradient(to right, #E4E5DE, #E4E5DE 50%, #FFF804 50%, #FFF804);
+}
+.making-left{
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 1 / span 2;
+}
+.making-right{
+    grid-column: 3 / span 4;
+}
+.making-content{
+    width: 80%;
+    padding: 50px 100px;
+}
+.making-content label, h2, h6{
+    color: black;
+    font-family: Figtree;
+    text-align: center;
+}
+.label{
+    width: 50px;
+    color: black;
+    font-family: Figtree;
+    font-weight: 700;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0 auto 30px;
+}
+.making-content h2{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.making-content h6{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+.label-r{
+    width: 75px;
+    color: black;
+    font-family: Figtree;
+    font-weight: 700;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0 auto 30px;
+}
+.making-container-next{
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 1fr;
+    background: linear-gradient(to right, #E4E5DE, #E4E5DE 50%, #FFF804 50%, #FFF804);
+    padding-bottom: 50px;
+}
+.making-left-next{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+}
+.making-right-next{
+    grid-column: 3 / span 4;
+    grid-row: 1 / 2;
+}
+.making-container-arrow{
+    height: 100%;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.making-container-arrow-circle{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+span{
+    font-family: Figtree;
+    font-size: 80px;
+    font-weight: 800;
+}
+.body{
+    height: 74%;
+    color: black;
+    border-left: 3px solid black;
+}
+.head{
+    width: 20px;
+    height: 20px;
+    border: solid #000000;
+    border-width: 4px 4px 0 0;
+    margin-top: -20px;
+    display: inline-block;
+    transform: rotate(135deg);
+}
+.making-content-next{
+    width: 80%;
+    padding: 50px 100px 0;
+}
+.making-content-next h2, h3, p{
+    color: black;
+    font-family: Figtree;
+    text-align: right;
+}
+.making-content-next h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.making-content-next h3{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    margin: 20px 0;
+}
+.making-content-next p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.making-img-left1{
+    text-align: right;
+}
+.making-img-left1 img{
+    width: 65%;
+    margin-right: 50px;
+}
+.making-img-left2 img{
+    width: 100%;
+    margin-right: 50px;
+}
+.making-content-next-r{
+    width: 80%;
+    padding: 50px 100px 0;
+}
+.making-content-next-r h3, h4, h5, a{
+    color: black;
+    font-family: Figtree;
+    text-align: left;
+}
+.making-content-next-r h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.making-content-next-r h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.making-content-next-r h5{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.making-img-right1 img{
+    width: 65%;
+    margin-left: 90px;
+}
+.making-img-right2 img{
+    width: 100%;
+}
+.making-content-next-r a{
+    font-size: 16px;
+    font-weight: 700;
+}
+.making-content-next-r button{
+    width: 45%;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-family: Figtree;
+    padding: 15px 0;
+    margin: 30px 150px;
+}
