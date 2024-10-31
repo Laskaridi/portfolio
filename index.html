@@ -4,27 +4,393 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/blog-pr-card.css">
+    <link rel="stylesheet" href="style/music.css">
 </head>
 <body>
-    <div class="container">
-    <div class="content">
-        <img src="images/blog-image.png" alt="blog image to FrontendMentor.io">
-        <div class="content-title">
-            <h3>Learning</h3>
-        </div>
-            <h4>Published 21 Dec 2023</h4>
-            <h2>HTML & CSS foundations</h2>
-            <p>
-                These languages are the backbone of every website, defining 
-                structure, content, and presentation.
-            </p>
-            <div class="bottom-content">
-                <img src="images/userpic.png" alt="avatar to FrontendMentor.io">
-                <h5>Greg Hooper</h5>
+    <header>
+        <div class="container">
+            <div class="nav-content">
+            <i class="fa-regular fa-image fa-4x"></i>  
+                <div class="dropdown">
+                    <a href="#" id="dropdownLink">DISCOVER MUSIC ▼</a>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="#home">Home</a>
+                        <a href="#services">Service</a>
+                        <a href="#contact">Kontacts</a>
+                        <a href="#about">About us</a>
+                    </div>
+                </div>
+                <a href="">For Artists</a>
+                <a href="">For Fans</a>
+                <i class="fa-solid fa-magnifying-glass fa-lg" id="search-button"></i>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Enter a search">
+                </div>
+                <i class="fa-solid fa-cart-shopping fa-lg"></i>
             </div>
-    </div>
-    </div>
+            <div class="login">
+                <a href="">log in</a>
+                <button>make your own</button>
+            </div>
+        </div>
+    </header>
+    <section class="top-content">
+        <div class="top-left-content">
+            <label>FOR ARTISTS</label>
+            <h1>
+                Music in your hands. Without the barriers.
+            </h1>
+            <p>
+                Full-service production, a global retail network, customer 
+                support - and you keep up to 85% of profits. ↓
+            </p>
+        </div>
+        <div class="top-right-content">
+            <img src="images/top.png" alt="qrater">
+        </div>
+    </section>
+    <section class="choose">
+        <h1>Choose from two formats with promised quality</h1>
+        <div class="choose-content">
+            <div class="choose-left-content">
+                <div class="choose-left-content-container">
+                <h2>Vinyl</h2>
+                <p>
+                    We know how special pressed records are to you. 
+                    Our products are built for fans, by fans. We make it 
+                    easy for artists to press vinyl, so the music you love can 
+                    keep reaching ears in the most beautiful way.
+                </p>
+                <img src="images/choose-left.png" alt="vinyl qrates">
+                </div>
+            </div>
+            <div class="choose-right-content">
+                <div class="choose-right-content-container">
+                <h2>Cassette</h2>
+                <p>
+                    Cassettes have always been special to music fans and 
+                    artists. Whether you are saving a recording of a great 
+                    concert, or preserving an early demo, there’s no better 
+                    way to keep that music close than on cassette tapes.
+                </p>
+                <img src="images/choose-right.png" alt="cassette qrates">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="title-make">
+        <h1>You make music. We do the rest.</h1>
+    </section>
+    <section class="making-containter">
+        <div class="making-left">
+            <div class="making-content">
+                <div class="label">YOU</div>
+                <h2>Focus on making music</h2>
+                <h6>
+                    You can focus on your music production with peace of mind: 
+                    the Artist Toolkit has lots of information about music 
+                    production, knowledge about vinyl records and cassettes, 
+                    and tips on how to sell your music. Artist Toolkit
+                </h6>
+            </div>
+        </div>
+        <div class="making-right">
+            <div class="making-content">
+                <div class="label-r">QRATES</div>
+                <h2>We'll take care of the hassle</h2>
+                <h6>
+                    Qrates supports a wide range of artists while 
+                    eliminating the hassles, costs and risks associated with 
+                    pressing records, giving artists more time and income back 
+                    in their hands.
+                </h6>
+        </div>
+    </section>
+    <section class="making-container-next">
+        <div class="making-left-next">
+            <div class="making-content-next">
+                    <h2>Express your work on Qrates</h2>
+                    <h3>Qrates studio</h3>
+                    <p>
+                        Your product details should match the details 
+                        of your music. Tweak and customize your vinyl, 
+                        sleeve, jacket, and more.
+                    </p>
+                </div>
+        </div>
+         <div class="making-container-arrow">
+            <div class="making-container-arrow-circle">
+                <span>1</span>
+            </div>
+            <i class="body"></i>
+            <i class="head"></i>
+        </div>
+        <div class="making-right-next">
+            <div class="making-content-next-r">
+                    <h3>Over 120,000 customization possibilities
+                        3D Visualizer</h3>
+                    <h5>
+                        Choose from vinyl or cassette, each with a wide range 
+                        of options including colors, packaging, obi strips, 
+                        download cards, etc. There are over 120,000 variations 
+                        of colors and specs for vinyl and cassette that can be 
+                        customized in the Qrates Studio.
+                    </h5>
+               </div>
+               <div class="making-img-right1">
+               <img src="images/making1.png" alt="vinyl qrates">
+               </div>
+        </div>
+    </section>
+    <section class="making-container-next">
+        <div class="making-left-next">
+            <div class="making-content-next">
+                    <h2>Start a Qrates page,
+                        confirm and pay for production costs.<br>
+                        Pay up front? Crowdfunding?
+                    </h2>
+                    <p>
+                        Pay for the production of your product in advance and 
+                        start production immediately, or choose the crowdfunding 
+                        option and press as many copies you like with pledges 
+                        you collect from your fans.
+                    </p>
+                    <h3>Qrates page and Artist page</h3>
+                    <p>
+                        The Qrates page is your storefront on Qrates to sell 
+                        your music. The Artist page is your profile page. Upload 
+                        your images to the template provided and fill in the 
+                        form to set it up.
+                    </p>
+                </div>
+                <div class="making-img-left1">
+                <img src="images/making2.png" alt="vinyl for you">
+                </div>
+        </div>
+         <div class="making-container-arrow">
+            <div class="making-container-arrow-circle">
+                <span>2</span>
+            </div>
+            <i class="body"></i>
+            <i class="head"></i>
+        </div>
+        <div class="making-right-next">
+            <div class="making-content-next-r">
+                    <h3>We support a wide range of artists' needs</h3>
+                    <h4>Small production minimums</h4>
+                    <h5>
+                        Vinyl records can be made from 100 copies, and 
+                        cassette tapes from 50 copies.
+                    </h5>
+                    <h4>Select the payment option</h4>
+                    <h5>
+                        You can pay for the production of your product in 
+                        advance and begin the production process immediately. 
+                        We also have a pre-order function, which allows you to 
+                        take orders during production until completion, and the 
+                        crowdfunding method, which allows you to collect orders 
+                        in advance and then begin the manufacturing process. If 
+                        you don't want to pay for the production costs upfront, 
+                        or if you want to collect orders from your fans before 
+                        deciding on the final number of pieces to be produced, 
+                        try crowdfunding. No risk, no waste.
+                    </h5>
+                    <h4>
+                        Easily customizable your Qrates page and artist page
+                    </h4>
+                    <h5>
+                        Qrates provides easy-to-setup templates for the
+                        Qrates page and the artist profile page. The Qrates 
+                        page for selling your music can be set up to include 
+                        audio samples, embedded videos, and comments from fans, 
+                        making it a great promotional tool.
+                    </h5>
+               </div>
+        </div>
+    </section>
+    <section class="making-container-next">
+        <div class="making-left-next">
+            <div class="making-content-next">
+                    <h2>Collect orders from fans</h2>
+                    <p>
+                        Share your Qrates page and collect orders from your 
+                        fans. A variety of tools are also available to promote 
+                        your music.
+                    </p>
+                </div>
+        </div>
+         <div class="making-container-arrow">
+            <div class="making-container-arrow-circle">
+                <span>3</span>
+            </div>
+            <i class="body"></i>
+            <i class="head"></i>
+        </div>
+        <div class="making-right-next">
+            <div class="making-content-next-r">
+                    <h3>Wholesale distribution network</h3>
+                    <h4>You can sell wholesale directly to record stores worldwide</h4>
+                    <h5>
+                        Simply start selling on your Qrates page and receive 
+                        orders from over 150 record stores and distributors 
+                        worldwide that we partner with.
+                    </h5>
+                    <div class="making-img-right2">
+                    <img src="images/making3.png" alt="Wholesale qrates">
+                    </div>
+               </div>
+        </div>
+    </section>
+    <section class="making-container-next">
+        <div class="making-left-next">
+            <div class="making-content-next">
+                    <h2>Upload your product assets and start production</h2>
+                    <p>
+                        Prepare your audio and print files required for production.
+                    </p>
+                </div>
+        </div>
+         <div class="making-container-arrow">
+            <div class="making-container-arrow-circle">
+                <span>4</span>
+            </div>
+            <i class="body"></i>
+            <i class="head"></i>
+        </div>
+        <div class="making-right-next">
+            <div class="making-content-next-r">
+                    <h3>Professional audio mastering and artwork support.</h3>
+                    <h4>Audio mastering service</h4>
+                    <h5>
+                        Qrates offers a audio mastering service with a partner 
+                        professional audio engineer to support optimal sound 
+                        creation.
+                    </h5>
+                    <h4>Artwork support</h4>
+                    <h5>
+                        We help ensure that your artwork conforms to printing 
+                        standards and that your product is as beautiful as 
+                        possible.
+                    </h5>
+               </div>
+        </div>
+    </section>
+    <section class="making-container-next">
+        <div class="making-left-next">
+            <div class="making-content-next">
+                   <div class="making-img-left2">
+                    <img src="images/making4.png" alt="more vinyl qrates">
+                   </div>
+            </div>
+        </div>
+         <div class="making-container-arrow">
+            <div class="making-container-arrow-circle">
+                <span>5</span>
+            </div>
+            <i class="body"></i>
+            <i class="head"></i>
+        </div>
+        <div class="making-right-next">
+            <div class="making-content-next-r">
+                    <h3>Pressing records and making cassette tapes</h3>
+                    <h4>Trusted production partners</h4>
+                    <h5>
+                        We partner with factories that have a long history of 
+                        manufacturing vinyl records and cassette tapes with 
+                        proven technical capabilities and produce world-class 
+                        quality products.
+                    </h5>
+                    <h4>Speedy delivery time</h4>
+                    <h5>
+                        Vinyl records are shipped from our factory within an 
+                        average of 16 weeks after ordering. Cassette tapes can 
+                        be shipped from the factory in an average of 8 weeks or 
+                        less.
+                    </h5>
+                    <a href="#">LEARN MORE</a>
+               </div>
+        </div>
+    </section>
+    <section class="making-container-next">
+        <div class="making-left-next">
+        </div>
+         <div class="making-container-arrow">
+            <div class="making-container-arrow-circle">
+                <span>6</span>
+            </div>
+            <i class="body"></i>
+            <i class="head"></i>
+        </div>
+        <div class="making-right-next">
+            <div class="making-content-next-r">
+                    <h3>Warehousing and Distribution</h3>
+                    <h4>Free warehousing</h4>
+                    <h5>
+                        When you sell records or cassettes on Qrates, you can 
+                        store your products for free in one of our three 
+                        worldwide distribution centers (USA, UK, Japan).
+                    </h5>
+                    <h4>Shipping</h4>
+                    <h5>
+                        When a product is purchased from a customer, Qrates carefully 
+                        packages the product and ships it worldwide. We can also ship 
+                        products to any designated location.
+                    </h5>
+                    <a href="#">LEARN MORE</a>
+                    <div class="making-img-right2">
+                        <img src="images/making5.png" alt="Warehousing qrates">
+                    </div>
+               </div>
+        </div>
+    </section>
+    <section class="making-container-next">
+        <div class="making-left-next">
+            <div class="making-content-next">
+            <h2>Receive revenue</h2>
+            <p>
+                Make a request to receive your revenue. We can deposit your 
+                funds to your pre-registered bank account or Paypal account.
+            </p>
+            </div>
+            <div class="making-img-left1">
+                <img src="images/making6.png" alt="Receive qrates">
+            </div>
+        </div>
+         <div class="making-container-arrow">
+            <div class="making-container-arrow-circle">
+                <span>7</span>
+            </div>
+            <i class="body"></i>
+            <i class="head"></i>
+        </div>
+        <div class="making-right-next">
+            <div class="making-content-next-r">
+                    <h3>Continue selling on Qrates</h3>
+                    <h4>Selling on Qrates</h4>
+                    <h5>
+                        By storing your inventory in the Qrates warehouse, you 
+                        can continue to sell your work on Qrates. You can 
+                        manufacture the exact number of copies as your project 
+                        collected at the end of the crowdfunding campaign, or 
+                        you can make more copies and continue to sell them on 
+                        Qrates.
+                    </h5>
+                    <h4>Repress</h4>
+                    <h5>
+                        Repressing records is always easy. Master stampers can 
+                        be stored at the factory for 18 months at no charge, so 
+                        there is no need to make new stampers within that time 
+                        frame. Use the repress requests from fans as a signal on 
+                        when to repress more records.
+                    </h5>
+                    <a href="#">LEARN MORE</a><br>
+                    <button>how it works</button>
+               </div>
+        </div>
+    </section>
+
+    <script src="script/music.js"></script>
 </body>
 </html>
